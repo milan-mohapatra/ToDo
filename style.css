@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(255, 255, 0, 0.189);
+}
+
+.container {
+  width: 80%;
+  min-height: 100vh;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.192);
+  padding: 30px 20px 0 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-weight: bolder;
+  margin: 30px;
+  text-align: center;
+}
+
+form {
+  padding: 20px;
+  width: 90%;
+  height: 20rem;
+  margin: auto;
+  margin-bottom: 60px;
+  background-color: rgba(0, 0, 0, 0.442);
+  border-radius: 10px;
+}
+
+form #title {
+  width: 90%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: black;
+}
+
+form button {
+  position: relative;
+  left: 10px;
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(4, 195, 4);
+  transition: all 1s;
+}
+
+form button:hover {
+  background-color: rgb(3, 139, 3);
+  cursor: pointer;
+}
+
+form #description {
+  width: 98%;
+  height: 60%;
+  border: none;
+  border-radius: 10px;
+  margin: 30px auto auto 10px;
+  padding: 20px;
+  font-size: 20px;
+  color: gray;
+  resize: none;
+}
+
+.task {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 30px;
+  width: 90%;
+  height: 10rem;
+  margin: auto;
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.task div {
+  width: 95%;
+  margin-right: 10px;
+}
+
+.deleteBtn {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  background-color: rgb(255, 17, 17);
+  transition: all 1s;
+}
+
+.deleteBtn:hover {
+  background-color: rgb(216, 4, 4);
+  cursor: pointer;
+}
+
+.task p {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.707);
+  margin-bottom: 10px;
+}
+
+.task span {
+  color: gray;
+}
+
+/* for mobile */
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  .container {
+    width: 100%;
+    background-color: transparent;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  form {
+    height: 12rem;
+    padding: 15px;
+    margin-bottom: 40px;
+  }
+
+  form #title {
+    width: 80%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+  }
+
+  form button {
+    left: 0px;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+  }
+
+  form #description {
+    display: block;
+    padding: 10px;
+    font-size: 12px;
+    margin: 18px auto auto auto;
+  }
+
+  .task {
+    padding: 13px;
+    height: 7rem;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+
+  .task p {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .task span {
+    font-size: 12px;
+  }
+
+  .deleteBtn {
+    left: 0px;
+    height: 25px;
+    width: 25px;
+    border-radius: 20px;
+    font-size: 15px;
+  }
+}
